@@ -26,6 +26,7 @@ public class TestSalgradeClient {
         ApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
         SalgradeService salgradeService = ac.getBean("salgradeService",SalgradeService.class);
         salgradeService.tranfer("张三","王五",100f);
+
     }
 
     @Test
