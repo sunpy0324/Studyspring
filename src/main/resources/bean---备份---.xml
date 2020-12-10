@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+	http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+    <!-- 把对象的创建交给spring来管理-->
+    <!--<bean id="accountDao" class="ocm.yonyou.dao.impl.AccountDaoImpl"></bean>-->
+    <!--<bean id="accountService" class="ocm.yonyou.service.impl.AccountServiceImpl"></bean>-->
+
+    <!-- 使用工厂中的方法创建对象-->
+    <!--<bean id="beanFactory" class="ocm.yonyou.factory.BeanFactory"></bean>-->
+    <!--<bean id="accountService"  factory-bean="beanFactory" factory-method="getAccountService"></bean>-->
+
+    <!-- bean对象的单例对象和多例对象 -->
+    <!-- singleton是scope的默认值，默认为单例对象-->
+    <!--<bean id="beanFactory" class="ocm.yonyou.factory.BeanFactory" scope="singleton"></bean>-->
+    <!-- prototype是多例对象 -->
+    <!--<bean id="beanFactory" class="ocm.yonyou.factory.BeanFactory" scope="prototype"></bean>-->
+
+    <!--<bean id="accountService" class="ocm.yonyou.service.impl.AccountServiceImpl">-->
+        <!--<constructor-arg name="name" value="test"></constructor-arg>-->
+        <!--<constructor-arg name="age" value="18"></constructor-arg>-->
+        <!--<constructor-arg name="date" ref="now"></constructor-arg>-->
+    <!--</bean>-->
+
+    <!--<bean id="now" class="java.util.Date"></bean>-->
+
+    <!--<context:component-scan base-package="com.yonyou"></context:component-scan>-->
+
+
+</beans>
